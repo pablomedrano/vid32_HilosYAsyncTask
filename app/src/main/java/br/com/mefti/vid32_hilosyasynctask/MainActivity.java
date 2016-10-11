@@ -8,6 +8,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button button;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void UnSegundo(){
         try {
             Thread.sleep(1000);
-        }catch (InterruptedException e){}
+        }catch (InterruptedException e){
+            System.out.println(" Error");
+        }
     }
 
     @Override
